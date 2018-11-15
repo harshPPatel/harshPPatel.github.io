@@ -32,7 +32,7 @@ window.onload = function() {
         element.innerHTML = "Press Space To Get Color";
     }
 
-    element.onclick = randomColorGenerator();
+    element.addEventListener("click", randomColorGenerator);
 
     document.body.onkeyup = function(e) {
         if (e.keyCode == 32) {
