@@ -29,10 +29,10 @@ function fontColor(color) {
 
 window.onload = function() {
     if (counter == 0) {
-        element.innerHTML = "Press Space To Get Color";
+        element.innerHTML = "Press Space / Click <br> To Get Color";
     }
 
-    element.addEventListener("click", randomColorGenerator);
+    body.addEventListener("click", randomColorGenerator);
 
     document.body.onkeyup = function(e) {
         if (e.keyCode == 32) {
