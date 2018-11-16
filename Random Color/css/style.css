@@ -31,7 +31,13 @@ body {
   left: 50%;
   font-size: 4em;
   font-weight: lighter;
-  width: 60%;
+  width: 70%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  height: auto;
 }
 
 .footer {
