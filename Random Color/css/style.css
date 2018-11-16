@@ -38,6 +38,8 @@ body {
   outline: none;
   color: inherit;
   height: auto;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 .footer {
