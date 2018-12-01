@@ -66,6 +66,17 @@ input[name="length"] {
     margin-left: 2rem;
 }
 
+input[name="output"] {
+    width: 25rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    input[name="output"] {
+        width: 90%;
+    }
+}
+
 input[type="button"] {
     padding: 0.5rem 2rem;
     border: none;
