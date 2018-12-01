@@ -1,0 +1,82 @@
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    min-height: 500px;
+}
+
+.container {
+    text-align: center;
+    width: 95%;
+    max-width: 1140px;
+}
+
+/* Form Stylings */
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    height: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #1e272e;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+    input:last-of-type {
+        margin-bottom: 0;
+    }
+
+input[name="length"] {
+    width: 5rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+input[type="button"] {
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: #1e272e;
+    color: #ffffff;
+    margin: 2rem auto 3rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
