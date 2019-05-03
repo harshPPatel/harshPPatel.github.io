@@ -1,0 +1,270 @@
+/* Universal Stylings */
+:root {
+  --primary-color: #F36C32;
+  --secondary-color: #AF2364;
+  --font-color: #2E2E2E;
+  --contianer-max-width: 1160px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  /* line-height: 1.75; */
+  width: 100%;
+  height: 100%;
+  color: var(--font-color);
+  position: relative;
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  position: relative;
+}
+body::after {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/image.png) center center no-repeat;
+  bacakground-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+::placeholder {
+  color: var(--primary-color);
+  opacity: 0.6;
+}
+
+/* Typography Styles */
+h1, h3, h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+h1, h3 {
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 3.125rem;
+}
+
+h3 {
+  font-size: 1.5625rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+  font-weight: normal;
+}
+
+/* Utilitis Styles */
+.u-container {
+  max-width: var(--contianer-max-width);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.u-capital {
+  text-transform: uppercase;
+}
+
+.u-text-primary {
+  color: var(--primary-color);
+}
+
+.u-text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Main Styles */
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.col {
+  width: 50%;
+  overflow: hidden;
+}
+
+.image-content {
+  text-align: center;
+}
+
+.img_container {
+  width: 80%;
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.img_container img {
+  width: 100%;
+  height: auto;
+}
+
+.kicker {
+  margin-top: 0.5rem;
+  font-size: 12px;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  max-width: 350px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 1rem;
+  margin-bottom: 3.125rem;
+  transition: background-color 0.2s ease;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Card Styles */
+.card {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 5px;
+  border:2px solid var(--primary-color);
+  background-color: #fff;
+  height: auto;
+  min-height: 150px;
+  margin-bottom: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-primary {
+  border:2px solid var(--primary-color);
+}
+
+.card-head,
+.card-body {
+  padding: 0.8rem;
+}
+
+.card-primary .card-head {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Footer Sytles */
+footer {
+  width: 100%;
+  color: #fff;
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 0.7rem;
+  z-index: 2;
+}
+
+footer a:link,
+footer a:visited {
+  color: #fff;
+  opacity: 1;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+  footer a:hover,
+  footer a:active {
+    opacity: 0.5;
+  }
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .col {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  html {
+    font-size: 13px;
+  }
+  .u-container {
+    flex-direction: column;
+  }
+  .image-content {
+    margin: 4rem 0;
+  }
+  h1, input {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .card {
+    max-height: 75px;
+  }
+  .image-content {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 640px) and (max-height: 786px) {
+  footer {
+    margin-top: 2rem;
+  }
+  body {
+    height: auto;
+  }
+  main {
+    height: auto;
+  }
+}
+
+/* AUTO PREFIEX THE CSS!!!!!!!!!!!!!!!!!!!!!!!! */
