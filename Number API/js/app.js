@@ -2,7 +2,7 @@
 // Variables
 
 // API's base URL
-var API_BASE_URL = 'http://numbersapi.com';
+var API_BASE_URL = 'https://numbersapi.com';
 
 // API's Request Type (Possible values : trivia, math, date, or year)
 var API_REQUEST_TYPE;
